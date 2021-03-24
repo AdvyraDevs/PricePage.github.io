@@ -35,19 +35,19 @@ slider.oninput = function() {
         ]
       },
       options: {
-        tooltips: {
-            callbacks: {
-                labelColor: function(tooltipItem, chart) {
-                    return {
-                        borderColor: 'rgb(255, 0, 0)',
-                        backgroundColor: 'rgb(255, 0, 0)'
-                    };
-                },
-                labelTextColor: function(tooltipItem, chart) {
-                    return '#543453';
-                }
-            }
-        },
+        // tooltips: {
+        //     callbacks: {
+        //         labelColor: function(tooltipItem, chart) {
+        //             return {
+        //                 borderColor: 'rgb(255, 0, 0)',
+        //                 backgroundColor: 'rgb(255, 0, 0)'
+        //             };
+        //         },
+        //         labelTextColor: function(tooltipItem, chart) {
+        //             return '#543453';
+        //         }
+        //     }
+        // },
         legend: {
            display: true,
            position:'right'
