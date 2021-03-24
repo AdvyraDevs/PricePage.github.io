@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+
+
+body{
+
+	font-family: 'poppins';
+	color: white;
+	font-size: 14px;
+}
+
+.options-label{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 3px;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 5px; 
+
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+   
+  border-radius: 50%; 
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.pie_chart_content{
+
+	height: 1100px;
+	background-image: url("https://scandiononcology.com/wp-content/uploads/2018/12/iStock-673266772.jpg");
+}
+
+
+.overlay{
+
+	background-color: #094162e5;
+	height: 1100px;
+	padding-top: 200px;
+padding-bottom: 200px;
+}
+
+.form-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pie_chart_content .container{
+
+	background-color: white;
+	border-radius: 40px;
+	padding: 0px;
+}
+
+.main_box h1{
+
+	padding: 50px 0px 50px 0px;
+	color: black;
+	font-size: 25px;
+}
+
+.main_box{
+
+	background-color: white;
+	height: 100%;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.count_box{
+
+	background-color: #182d6e;
+	height: 100%;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	padding: 100px;
+}
+
+.form-control:disabled,
+.form-control[readonly]{
+
+	background-color: #3546b0;
+	opacity: 1;
+
+}
+
+.form-control:focus{
+
+	background-color: transparent;
+	color: white;
+	border: none;
+}
