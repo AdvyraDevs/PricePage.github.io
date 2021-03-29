@@ -7,8 +7,33 @@ body{
 	color: white;
 	font-size: 14px;
 }
-
+h1{
+  text-align: center;
+  margin-bottom: 60px;
+  color: #05A28D;
+}
+.Chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bundle{
+  margin: 10px;
+  height: 100%;
+  display: flex;
+  color: Grey;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 70%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#bundle:hover{
+  color:grey;
+  
+}
 .options-label{
+    font-size: 60%;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 3px;
@@ -59,23 +84,23 @@ body{
 
 .pie_chart_content{
 
-	height: 1100px;
-	background-image: url("https://scandiononcology.com/wp-content/uploads/2018/12/iStock-673266772.jpg");
+	height:100vh;
+	background-color: #FCFCF4;
 }
 
 
 .overlay{
 
-	background-color: #094162e5;
-	height: 1100px;
-	padding-top: 200px;
-padding-bottom: 200px;
+	background-color: #FCFCF4;
+	height: 100%;
+	padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .form-option{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     
 }
 
@@ -103,7 +128,7 @@ padding-bottom: 200px;
 
 .count_box{
 
-	background-color: #182d6e;
+	background-color: #0169B4;
 	height: 100%;
 	border-bottom-left-radius: 30px;
 	border-top-left-radius: 30px;
@@ -123,4 +148,81 @@ padding-bottom: 200px;
 	background-color: transparent;
 	color: white;
 	border: none;
+}
+.card{
+  width:100%;
+  height:100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  border-radius:10px;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color:whitesmoke;  
+  border-radius:10px;
+}
+.back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.back:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: 100% 100%;
+  background: url('https://i.imgur.com/W3tra4F.gif');
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.front, .back {
+  transition: all 0.5s linear;
+}
+.front {
+  background-image: url('https://i.imgur.com/W3tra4F.gif');
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.back {
+  box-shadow: 0 0 0 #aaa;
+}
+.return {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: gray;
+  cursor: pointer;
+  padding: 5px;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: #dcdcdc;
+  font-size: 18px;
+}
+.return:focus {
+  outline: none;
+}
+.flipped, .hovercard:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.flipped .front, .hovercard:hover .front {
+  box-shadow: 0 0 0 #aaa;
+}
+.flipped .back, .hovercard:hover .back {
+  box-shadow: 5px 5px 5px #aaa;
 }
