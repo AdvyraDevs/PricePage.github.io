@@ -18,7 +18,7 @@ h1{
   align-items: center;
 }
 #bundle{
-  margin: 10px;
+  padding-right: 10px;
   height: 100%;
   display: flex;
   color: Grey;
@@ -37,6 +37,9 @@ h1{
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 .slidecontainer {
@@ -49,13 +52,13 @@ h1{
     appearance: none;
     width: 100%; /* Full-width */
     height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
+    background: lightblue; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     border-radius: 5px; 
-
+    
   }
   
   /* Mouse-over effects */
@@ -71,14 +74,14 @@ h1{
     height: 25px; /* Slider handle height */
    
   border-radius: 50%; 
-    background: #4CAF50; /* Green background */
+    background: yellow; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
+    background:yellow; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
 
@@ -103,7 +106,24 @@ padding-bottom: 10px;
     justify-content: center; 
     
 }
-
+.options-label input {
+  visibility: hidden;/* <-- Hide the default checkbox. The rest is to hide and allow tabbing, which display:none prevents */
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.options-label span {/* <-- Style the artificial checkbox */
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  border: 1px solid yellow;
+  display:inline-block;
+}
+[type=checkbox]:checked + span {/* <-- Style its checked state */
+  background: green;
+}
 .pie_chart_content .container{
 
 	background-color: white;
@@ -119,7 +139,7 @@ padding-bottom: 10px;
 }
 
 .main_box{
-
+  padding-right: 10px;
 	background-color: white;
 	height: 100%;
 	border-bottom-right-radius: 30px;
