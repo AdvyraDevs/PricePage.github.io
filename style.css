@@ -74,7 +74,7 @@ h1{
     height: 25px; /* Slider handle height */
     border-radius: 50%; 
     background-size: cover;
-    background-image: url("advyra logo.png");
+    background-image: url("images/advyralogo.PNG");
     background-position: center;
     background-color: chartreuse;
     cursor: pointer; /* Cursor on hover */
